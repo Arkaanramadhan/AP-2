@@ -1,19 +1,19 @@
-#include <iostream>
-using namespace std;
+#include <iostream> // Header pada C++
+using namespace std; // digunakan agar tidak perlu lagi membuat std :: pada tiap instruksi program
 
-// fungsi tanpa nilai balikan 
+// fungsi tanpa nilai balikan, biasanya hanya melakukan program keluaran atau output
 void tampilkanPesan()
 {
     cout << "==== SELAMAT DATANG DI AP 2 ===="<< endl;
 }
 
-// fungsi dengan nilai balikan
+// fungsi dengan nilai balikan, membalikan nilai seperti dengan melakukan operasi matematika 
 int tambah(int a, int b)
 {
     return a + b;
 }
 
-// fungsi overload
+// fungsi overload, kemampuan untuk mendefenisikan beberapa fungsi dengan keadaan dimana terdapat nama fungsi yang sama namun jumlah atau tipe data parameternya berbeda
 int kali(int a, int b)
 {
     return a * b;
@@ -24,7 +24,7 @@ double kali(double a, double b)
     return a * b;
 }
 
-// fungsi rekursif 
+// fungsi rekursif, fungsi yang memanggil dirinya sendiri untuk menyelesaikan masalah dengan memabgi masalah besar menjadi lebih kecil contohnya program faktorial
 int faktorial(int n)
 {
     if (n == 0 || n == 1)
